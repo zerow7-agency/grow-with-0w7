@@ -21,10 +21,10 @@ const Navigation = () => {
   };
 
   const navItems = [
-    { label: "About", id: "about" },
-    { label: "Services", id: "services" },
+    { label: "Acerca de", id: "about" },
+    { label: "Servicios", id: "services" },
     { label: "Portfolio", id: "portfolio" },
-    { label: "Contact", id: "contact" }
+    { label: "Contacto", id: "contact" }
   ];
 
   return (
@@ -54,9 +54,9 @@ const Navigation = () => {
             <Button
               onClick={() => scrollToSection('contact')}
               size="sm"
-              className="primary-gradient hover:shadow-medium transition-all duration-300"
+              className="primary-gradient hover:shadow-medium transition-all duration-300 hover-scale"
             >
-              Get Started
+              Empezar
             </Button>
           </div>
           
@@ -90,7 +90,7 @@ const Navigation = () => {
                   size="sm"
                   className="w-full primary-gradient"
                 >
-                  Get Started
+                  Empezar
                 </Button>
               </div>
             </div>

@@ -19,8 +19,8 @@ const Contact = () => {
     
     if (!formData.name || !formData.email || !formData.message) {
       toast({
-        title: "Please fill in all fields",
-        description: "All fields are required to send your message.",
+        title: "Por favor completa todos los campos",
+        description: "Todos los campos son requeridos para enviar tu mensaje.",
         variant: "destructive",
       });
       return;
@@ -31,8 +31,8 @@ const Contact = () => {
     // Simulate form submission
     setTimeout(() => {
       toast({
-        title: "Message sent successfully!",
-        description: "I'll get back to you within 24 hours.",
+        title: "¡Mensaje enviado exitosamente!",
+        description: "Te responderé dentro de 24 horas.",
       });
       
       setFormData({ name: "", email: "", message: "" });
@@ -50,36 +50,36 @@ const Contact = () => {
   return (
     <section id="contact" className="section-padding bg-background">
       <div className="max-w-7xl mx-auto container-padding">
-        <div className="text-center space-y-4 mb-16">
+        <div className="text-center space-y-4 mb-16 animate-fade-in">
           <h2 className="text-3xl md:text-4xl font-bold">
-            Let's Work <span className="text-primary">Together</span>
+            Trabajemos <span className="text-primary">Juntos</span>
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Ready to transform your business? Get in touch and let's discuss how I can help 
-            you achieve your goals through strategic automation and creative solutions.
+            ¿Listo para transformar tu negocio? Ponte en contacto y discutamos cómo puedo ayudarte 
+            a alcanzar tus objetivos a través de automatización estratégica y soluciones creativas.
           </p>
         </div>
         
         <div className="grid lg:grid-cols-3 gap-12">
-          <div className="lg:col-span-2">
+          <div className="lg:col-span-2 animate-fade-in">
             <form onSubmit={handleSubmit} className="space-y-6">
               <div className="grid md:grid-cols-2 gap-6">
                 <div className="space-y-2">
                   <label htmlFor="name" className="text-sm font-medium text-foreground">
-                    Full Name *
+                    Nombre Completo *
                   </label>
                   <Input
                     id="name"
                     name="name"
                     value={formData.name}
                     onChange={handleInputChange}
-                    placeholder="Enter your full name"
+                    placeholder="Ingresa tu nombre completo"
                     required
                   />
                 </div>
                 <div className="space-y-2">
                   <label htmlFor="email" className="text-sm font-medium text-foreground">
-                    Email Address *
+                    Correo Electrónico *
                   </label>
                   <Input
                     id="email"
@@ -87,7 +87,7 @@ const Contact = () => {
                     type="email"
                     value={formData.email}
                     onChange={handleInputChange}
-                    placeholder="Enter your email address"
+                    placeholder="Ingresa tu correo electrónico"
                     required
                   />
                 </div>
@@ -95,14 +95,14 @@ const Contact = () => {
               
               <div className="space-y-2">
                 <label htmlFor="message" className="text-sm font-medium text-foreground">
-                  Project Details *
+                  Detalles del Proyecto *
                 </label>
                 <Textarea
                   id="message"
                   name="message"
                   value={formData.message}
                   onChange={handleInputChange}
-                  placeholder="Tell me about your project, goals, and how I can help..."
+                  placeholder="Cuéntame sobre tu proyecto, objetivos y cómo puedo ayudarte..."
                   className="min-h-[120px]"
                   required
                 />
@@ -111,13 +111,13 @@ const Contact = () => {
               <Button
                 type="submit"
                 disabled={isLoading}
-                className="w-full md:w-auto primary-gradient hover:shadow-medium transition-all duration-300"
+                className="w-full md:w-auto primary-gradient hover:shadow-medium transition-all duration-300 hover-scale"
               >
                 {isLoading ? (
-                  "Sending..."
+                  "Enviando..."
                 ) : (
                   <>
-                    Send Message
+                    Enviar Mensaje
                     <Send className="w-4 h-4 ml-2" />
                   </>
                 )}
@@ -125,13 +125,13 @@ const Contact = () => {
             </form>
           </div>
           
-          <div className="space-y-8">
+          <div className="space-y-8 animate-fade-in" style={{ animationDelay: '0.2s' }}>
             <div>
-              <h3 className="font-semibold mb-4">Quick Contact</h3>
+              <h3 className="font-semibold mb-4">Contacto Rápido</h3>
               <div className="space-y-4">
                 <a
                   href="mailto:hello@0w7agency.com"
-                  className="flex items-center space-x-3 text-muted-foreground hover:text-primary transition-colors group"
+                  className="flex items-center space-x-3 text-muted-foreground hover:text-primary transition-colors group hover-scale"
                 >
                   <div className="w-10 h-10 bg-primary/10 rounded-lg flex items-center justify-center group-hover:bg-primary/20 transition-colors">
                     <Mail className="w-5 h-5 text-primary" />
@@ -143,21 +143,21 @@ const Contact = () => {
                   href="https://linkedin.com/in/0w7agency"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center space-x-3 text-muted-foreground hover:text-primary transition-colors group"
+                  className="flex items-center space-x-3 text-muted-foreground hover:text-primary transition-colors group hover-scale"
                 >
                   <div className="w-10 h-10 bg-primary/10 rounded-lg flex items-center justify-center group-hover:bg-primary/20 transition-colors">
                     <Linkedin className="w-5 h-5 text-primary" />
                   </div>
-                  <span>LinkedIn Profile</span>
+                  <span>Perfil de LinkedIn</span>
                 </a>
               </div>
             </div>
             
-            <div className="bg-card p-6 rounded-xl shadow-soft">
-              <h4 className="font-semibold mb-3">Response Time</h4>
+            <div className="bg-card p-6 rounded-xl shadow-soft hover:shadow-medium transition-all duration-300">
+              <h4 className="font-semibold mb-3">Tiempo de Respuesta</h4>
               <p className="text-sm text-muted-foreground leading-relaxed">
-                I typically respond to all inquiries within 24 hours. For urgent projects, 
-                feel free to reach out directly via email.
+                Típicamente respondo a todas las consultas dentro de 24 horas. Para proyectos urgentes, 
+                siéntete libre de contactarme directamente por email.
               </p>
             </div>
           </div>

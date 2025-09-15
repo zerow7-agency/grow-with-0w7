@@ -22,43 +22,43 @@ const Hero = () => {
       <div className="relative max-w-7xl mx-auto container-padding w-full">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
           <div className="space-y-8">
-            <div className="space-y-6">
+            <div className="space-y-6 animate-fade-in">
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
-                Helping You Grow with{" "}
+                Te Ayudo a Crecer con{" "}
                 <span className="bg-gradient-to-r from-primary to-primary-hover bg-clip-text text-transparent">
-                  Strategy, Creativity, and Automation
+                  Estrategia, Creatividad y Automatización
                 </span>
               </h1>
               <p className="text-lg md:text-xl text-muted-foreground max-w-2xl leading-relaxed">
-                I specialize in transforming businesses through intelligent automation, 
-                AI-powered solutions, and strategic creative services. Let's unlock your potential together.
+                Me especializo en transformar negocios a través de automatización inteligente, 
+                soluciones potenciadas por IA y servicios creativos estratégicos. Liberemos tu potencial juntos.
               </p>
             </div>
             
-            <div className="flex flex-col sm:flex-row gap-4">
+            <div className="flex flex-col sm:flex-row gap-4 animate-fade-in" style={{ animationDelay: '0.2s' }}>
               <Button 
                 size="lg" 
                 onClick={scrollToContact}
-                className="primary-gradient hover:shadow-medium transition-all duration-300 transform hover:scale-105"
+                className="primary-gradient hover:shadow-medium transition-all duration-300 transform hover:scale-105 hover-scale"
               >
-                Work With Me
+                Trabajemos Juntos
               </Button>
               <Button 
                 variant="outline" 
                 size="lg"
                 onClick={() => document.getElementById('services')?.scrollIntoView({ behavior: 'smooth' })}
-                className="border-primary text-primary hover:bg-primary/5"
+                className="border-primary text-primary hover:bg-primary/5 hover-scale"
               >
-                View Services
+                Ver Servicios
               </Button>
             </div>
           </div>
           
-          <div className="relative">
-            <div className="relative rounded-2xl shadow-large overflow-hidden">
+          <div className="relative animate-fade-in" style={{ animationDelay: '0.4s' }}>
+            <div className="relative rounded-2xl shadow-large overflow-hidden hover-scale transition-all duration-500">
               <img 
                 src={heroImage} 
-                alt="Professional digital agency workspace" 
+                alt="Espacio de trabajo profesional de agencia digital" 
                 className="w-full h-[400px] lg:h-[500px] object-cover"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-primary/20 to-transparent" />

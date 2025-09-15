@@ -6,11 +6,11 @@ const Footer = () => {
       <div className="max-w-7xl mx-auto container-padding py-8">
         <div className="flex flex-col md:flex-row items-center justify-between space-y-4 md:space-y-0">
           <div className="text-sm text-muted-foreground">
-            © 2024 0w7 Agency. All rights reserved.
+            © 2024 0w7 Agency. Todos los derechos reservados.
           </div>
           
           <div className="flex items-center text-sm text-muted-foreground">
-            Built with <Heart className="w-4 h-4 mx-1 text-primary" fill="currentColor" /> for amazing businesses
+            Hecho con <Heart className="w-4 h-4 mx-1 text-primary animate-pulse" fill="currentColor" /> para negocios increíbles
           </div>
         </div>
       </div>
