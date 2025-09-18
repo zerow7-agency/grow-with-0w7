@@ -40,9 +40,15 @@
     /* Custom design tokens */
     --gradient-primary: linear-gradient(135deg, hsl(217 91% 60%), hsl(217 91% 45%));
     --gradient-hero: linear-gradient(135deg, hsl(0 0% 98%), hsl(217 91% 95%));
+    --gradient-accent: linear-gradient(135deg, hsl(217 91% 60% / 0.1), hsl(217 91% 45% / 0.1));
     --shadow-soft: 0 4px 6px -1px hsl(220 13% 18% / 0.08);
     --shadow-medium: 0 10px 15px -3px hsl(220 13% 18% / 0.12);
     --shadow-large: 0 25px 50px -12px hsl(220 13% 18% / 0.25);
+    --shadow-glow: 0 0 30px hsl(217 91% 60% / 0.3);
+    
+    /* Enhanced animations and interactions */
+    --transition-smooth: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-fast: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
     
     /* Typography scale */
     --text-xs: 0.75rem;
@@ -129,6 +135,11 @@
   
   .primary-gradient {
     background: var(--gradient-primary);
+    @apply shadow-soft transition-all duration-300;
+  }
+
+  .primary-gradient:hover {
+    box-shadow: var(--shadow-glow);
   }
   
   .shadow-soft {
@@ -142,6 +153,10 @@
   .shadow-large {
     box-shadow: var(--shadow-large);
   }
+
+  .shadow-glow {
+    box-shadow: var(--shadow-glow);
+  }
   
   .section-padding {
     @apply py-20 lg:py-32;
@@ -149,5 +164,29 @@
   
   .container-padding {
     @apply px-6 lg:px-8;
+  }
+
+  /* Enhanced utility classes */
+  .text-gradient {
+    background: var(--gradient-primary);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .hover-scale {
+    @apply transition-all duration-300 hover:scale-105 hover:shadow-medium;
+  }
+
+  .glass-effect {
+    @apply bg-white/10 backdrop-blur-sm border border-white/20;
+  }
+
+  .card-hover {
+    @apply transition-all duration-500 hover:shadow-large hover:-translate-y-1;
+  }
+
+  .gradient-accent {
+    background: var(--gradient-accent);
   }
 }
