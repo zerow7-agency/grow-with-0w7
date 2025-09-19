@@ -10,7 +10,7 @@ const Footer = () => {
           </div>
           
           <div className="flex items-center text-sm text-muted-foreground">
-            Hecho con <Heart className="w-4 h-4 mx-1 text-primary animate-pulse" fill="currentColor" /> para negocios increíbles
+            "Hecho con sistemas que funcionan, no con humo."
           </div>
         </div>
       </div>

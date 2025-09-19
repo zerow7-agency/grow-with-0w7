@@ -24,14 +24,13 @@ const Hero = () => {
           <div className="space-y-8">
             <div className="space-y-6 animate-fade-in">
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
-                Te Ayudo a Crecer con{" "}
+                ¿Quieres dejar de perder horas en tareas que{" "}
                 <span className="bg-gradient-to-r from-primary to-primary-hover bg-clip-text text-transparent">
-                  Estrategia, Creatividad y Automatización
+                  una máquina puede hacer mejor que tú?
                 </span>
               </h1>
               <p className="text-lg md:text-xl text-muted-foreground max-w-2xl leading-relaxed">
-                Me especializo en transformar negocios a través de automatización inteligente, 
-                soluciones potenciadas por IA y servicios creativos estratégicos. Liberemos tu potencial juntos.
+                Yo monto los sistemas. Tú disfrutas de más clientes, más ventas y más tiempo libre.
               </p>
             </div>
             
@@ -41,7 +40,7 @@ const Hero = () => {
                 onClick={scrollToContact}
                 className="primary-gradient hover:shadow-medium transition-all duration-300 transform hover:scale-105 hover-scale"
               >
-                Trabajemos Juntos
+                Quiero Ahorrar Tiempo
               </Button>
               <Button 
                 variant="outline" 
@@ -49,7 +48,7 @@ const Hero = () => {
                 onClick={() => document.getElementById('services')?.scrollIntoView({ behavior: 'smooth' })}
                 className="border-primary text-primary hover:bg-primary/5 hover-scale"
               >
-                Ver Servicios
+                Muéstrame Cómo
               </Button>
             </div>
           </div>

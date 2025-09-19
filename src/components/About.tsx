@@ -8,23 +8,13 @@ const About = () => {
               <h2 className="text-3xl md:text-4xl font-bold">
                 Acerca de <span className="text-primary">0w7 Agency</span>
               </h2>
-              <p className="text-lg text-muted-foreground leading-relaxed">
-                Con años de experiencia en estrategia empresarial y tecnología, ayudo a empresas 
-                a optimizar operaciones, mejorar experiencias de cliente y acelerar el crecimiento a través 
-                de automatización inteligente y soluciones creativas.
-              </p>
-            </div>
-            
-            <div className="space-y-4">
-              <p className="text-base text-foreground leading-relaxed">
-                Mi enfoque combina pensamiento estratégico con experiencia técnica práctica. 
-                Ya sea que necesites automatizar tareas repetitivas, implementar flujos de trabajo con IA, 
-                o crear experiencias digitales atractivas, entrego soluciones que generan resultados reales.
+              <p className="text-lg text-foreground leading-relaxed">
+                No soy una agencia de palabras bonitas. Soy quien te quita de encima lo que te hace perder dinero y energía. 
+                Automatizo procesos, pongo la IA a trabajar para ti y hago que tu negocio se mueva más rápido.
               </p>
               
               <p className="text-base text-foreground leading-relaxed">
-                Creo en construir alianzas a largo plazo con mis clientes, entendiendo sus 
-                desafíos únicos y creando soluciones personalizadas que evolucionan con sus necesidades empresariales.
+                Mientras otros se pelean con su bandeja de entrada, tú estarás cerrando ventas o yéndote a comer tranquilo.
               </p>
             </div>
           </div>

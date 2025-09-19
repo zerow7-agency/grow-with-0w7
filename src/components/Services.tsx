@@ -13,8 +13,8 @@ const Services = () => {
     {
       icon: MessageSquare,
       title: "Chatbots Inteligentes",
-      description: "Atiende a tus clientes 24/7 con chatbots personalizados que resuelven consultas, generan leads y mejoran la experiencia de usuario automáticamente.",
-      features: ["Respuestas Automáticas", "Integración WhatsApp", "Lead Generation", "Análisis de Conversaciones"],
+      description: "¿Cansado de contestar siempre lo mismo? Un chatbot bien entrenado responde, vende y nunca se queja. Mientras duermes, él sigue trabajando.",
+      features: ["Respuestas automáticas", "Integración WhatsApp", "Lead generation", "Análisis de conversaciones"],
       interactive: true,
       demoType: "chatbot",
       savings: "Ahorra 80% del tiempo en atención al cliente"
@@ -22,8 +22,8 @@ const Services = () => {
     {
       icon: Filter,
       title: "Automatización de Emails",
-      description: "Organiza, filtra y responde emails automáticamente. Clasifica mensajes por prioridad, deriva consultas y mantén tu bandeja siempre ordenada.",
-      features: ["Filtrado Inteligente", "Respuestas Automáticas", "Clasificación por Prioridad", "Integración CRM"],
+      description: "Tu bandeja de entrada deja de ser un campo de batalla. Los correos importantes llegan a ti, el resto se responde solo.",
+      features: ["Filtrado inteligente", "Respuestas automáticas", "Clasificación por prioridad", "Integración CRM"],
       interactive: true,
       demoType: "email",
       savings: "Reduce 2-3 horas diarias de gestión email"
@@ -31,8 +31,8 @@ const Services = () => {
     {
       icon: Package,
       title: "Control de Inventario",
-      description: "Monitorea stock en tiempo real, recibe alertas de productos agotados y automatiza pedidos a proveedores sin intervención manual.",
-      features: ["Alertas de Stock Bajo", "Reorden Automático", "Sincronización Ventas", "Reportes en Tiempo Real"],
+      description: "Nunca más perder ventas por falta de stock. Alertas, pedidos automáticos y sincronización en tiempo real.",
+      features: ["Alertas de stock bajo", "Reorden automático", "Sincronización ventas", "Reportes al instante"],
       interactive: true,
       demoType: "inventory",
       savings: "Evita roturas de stock y sobre-inventario"
@@ -40,11 +40,11 @@ const Services = () => {
     {
       icon: Zap,
       title: "Flujos de Trabajo Personalizados",
-      description: "Conecta todas tus herramientas empresariales: CRM, contabilidad, marketing y ventas trabajando en sincronía perfecta.",
-      features: ["Integración Zapier/Make", "Conexión de Apps", "Flujos Personalizados", "Notificaciones Automáticas"],
+      description: "Tu CRM, tu contabilidad, tu marketing y tus ventas hablando entre ellos sin que nadie haga de mensajero.",
+      features: ["Integración Zapier/Make", "Conexión de apps", "Flujos personalizados", "Notificaciones automáticas"],
       interactive: false,
       demoType: "",
-      savings: "Hasta 20 horas semanales automatizadas"
+      savings: "Hasta 20 horas semanales ahorradas"
     }
   ];
 
@@ -60,8 +60,7 @@ const Services = () => {
               <span className="text-foreground">que Transforman</span>
             </h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-              Libera el potencial de tu negocio con automatizaciones inteligentes que trabajan 24/7. 
-              <span className="text-primary font-semibold"> Ahorra tiempo, reduce errores y enfócate en hacer crecer tu empresa.</span>
+              Tu negocio funcionando solo mientras tú descansas.
             </p>
           </div>
           

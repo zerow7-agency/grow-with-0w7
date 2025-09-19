@@ -52,11 +52,13 @@ const Contact = () => {
       <div className="max-w-7xl mx-auto container-padding">
         <div className="text-center space-y-4 mb-16 animate-fade-in">
           <h2 className="text-3xl md:text-4xl font-bold">
-            Trabajemos <span className="text-primary">Juntos</span>
+            Hablemos de tu <span className="text-primary">Proyecto</span>
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            ¿Listo para transformar tu negocio? Ponte en contacto y discutamos cómo puedo ayudarte 
-            a alcanzar tus objetivos a través de automatización estratégica y soluciones creativas.
+            Si ya estás harto de perder tiempo en tonterías y quieres que tu negocio funcione con piloto automático, escríbeme.
+          </p>
+          <p className="text-base text-foreground max-w-2xl mx-auto">
+            No te prometo humo ni magia. Te prometo sistemas que trabajan por ti y que te hacen ganar más.
           </p>
         </div>
         
@@ -66,7 +68,7 @@ const Contact = () => {
               <div className="grid md:grid-cols-2 gap-6">
                 <div className="space-y-2">
                   <label htmlFor="name" className="text-sm font-medium text-foreground">
-                    Nombre Completo *
+                    Nombre completo *
                   </label>
                   <Input
                     id="name"
@@ -79,7 +81,7 @@ const Contact = () => {
                 </div>
                 <div className="space-y-2">
                   <label htmlFor="email" className="text-sm font-medium text-foreground">
-                    Correo Electrónico *
+                    Correo electrónico *
                   </label>
                   <Input
                     id="email"
@@ -95,14 +97,14 @@ const Contact = () => {
               
               <div className="space-y-2">
                 <label htmlFor="message" className="text-sm font-medium text-foreground">
-                  Detalles del Proyecto *
+                  Detalles del proyecto *
                 </label>
                 <Textarea
                   id="message"
                   name="message"
                   value={formData.message}
                   onChange={handleInputChange}
-                  placeholder="Cuéntame sobre tu proyecto, objetivos y cómo puedo ayudarte..."
+                  placeholder="Cuéntame qué necesitas automatizar o mejorar en tu negocio..."
                   className="min-h-[120px]"
                   required
                 />
@@ -122,12 +124,18 @@ const Contact = () => {
                   </>
                 )}
               </Button>
+              
+              <div className="text-center mt-4">
+                <p className="text-sm text-muted-foreground">
+                  👉 <span className="font-medium">Respondo en menos de 24 horas. (Y sí, soy yo, no un bot).</span>
+                </p>
+              </div>
             </form>
           </div>
           
           <div className="space-y-8 animate-fade-in" style={{ animationDelay: '0.2s' }}>
             <div>
-              <h3 className="font-semibold mb-4">Contacto Rápido</h3>
+              <h3 className="font-semibold mb-4">Contacto Directo</h3>
               <div className="space-y-4">
                 <a
                   href="mailto:hello@0w7agency.com"
@@ -148,7 +156,7 @@ const Contact = () => {
                   <div className="w-10 h-10 bg-primary/10 rounded-lg flex items-center justify-center group-hover:bg-primary/20 transition-colors">
                     <Linkedin className="w-5 h-5 text-primary" />
                   </div>
-                  <span>Perfil de LinkedIn</span>
+                  <span>Conecta conmigo</span>
                 </a>
               </div>
             </div>

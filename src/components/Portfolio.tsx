@@ -6,29 +6,29 @@ const Portfolio = () => {
     {
       title: "Hub de Automatización E-commerce",
       category: "Automatización",
-      description: "Construí un sistema integral de automatización conectando Shopify, gestión de inventario y soporte al cliente usando Zapier y Make.com.",
-      results: ["50% más rápido procesamiento de pedidos", "30% reducción en tareas manuales", "Mejor satisfacción del cliente"],
+      description: "Shopify, inventario y soporte conectados.",
+      results: ["➡️ Pedidos procesados 50% más rápido", "➡️ 30% menos tareas manuales"],
       tags: ["Zapier", "Shopify", "Make.com"]
     },
     {
       title: "Bot de Soporte con IA",
       category: "Consultoría en IA",
-      description: "Desarrollé y entrené un chatbot inteligente para una empresa SaaS, manejando el 80% de consultas de clientes automáticamente.",
-      results: ["80% automatización de consultas", "Soporte 24/7", "$15K ahorro anual"],
+      description: "Una SaaS saturada de consultas. El bot resolvió 80% de preguntas repetitivas.",
+      results: ["➡️ Soporte 24/7", "➡️ $15K ahorro anual"],
       tags: ["Chatbot IA", "Entrenamiento", "Soporte"]
     },
     {
       title: "Sitio Web Servicios Profesionales",
       category: "Diseño Web",
-      description: "Diseñé y desarrollé un sitio web moderno enfocado en conversión para una consultora con sistema de reservas integrado.",
-      results: ["300% aumento en leads", "Diseño mobile-first", "Optimizado SEO"],
+      description: "Consultora que necesitaba más clientes. Web moderna, optimizada.",
+      results: ["➡️ 300% aumento en leads"],
       tags: ["React", "SEO", "Responsivo"]
     },
     {
       title: "Identidad de Marca y Estrategia",
       category: "Creativo",
-      description: "Renovación completa de marca incluyendo diseño de logo, guías de marca y estrategia de contenido para una startup tech.",
-      results: ["Reconocimiento de marca +150%", "Mensajería consistente", "Presencia profesional"],
+      description: "Startup tech que sonaba amateur → logo, estrategia y presencia digital.",
+      results: ["➡️ +150% reconocimiento de marca"],
       tags: ["Branding", "Estrategia", "Diseño"]
     }
   ];
